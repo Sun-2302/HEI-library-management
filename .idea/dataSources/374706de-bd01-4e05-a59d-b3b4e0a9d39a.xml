@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="library_management@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.48">
+    <root id="1">
+      <ServerVersion>12.16</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="absence_hei"/>
+    <database id="3" parent="1" name="facebak"/>
+    <database id="4" parent="1" name="hotel"/>
+    <database id="5" parent="1" name="library_management">
+      <Current>1</Current>
+    </database>
+    <database id="6" parent="1" name="postgres"/>
+    <database id="7" parent="1" name="sys2"/>
+    <database id="8" parent="1" name="template0"/>
+    <database id="9" parent="1" name="template1"/>
+    <database id="10" parent="1" name="test"/>
+    <database id="11" parent="1" name="todo_app"/>
+    <schema id="12" parent="5" name="information_schema"/>
+    <schema id="13" parent="5" name="pg_catalog"/>
+    <schema id="14" parent="5" name="public">
+      <Current>1</Current>
+    </schema>
+  </database-model>
+</dataSource>
