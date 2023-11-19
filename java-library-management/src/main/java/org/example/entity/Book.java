@@ -3,6 +3,7 @@ package org.example.entity;
 import lombok.*;
 
 import java.util.Date;
+import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -11,7 +12,7 @@ import java.util.Date;
 @EqualsAndHashCode
 @ToString
 public class Book {
-    private String id;
+    private UUID id;
     private String name;
     private int pageNumber;
     private int topicId;
@@ -19,7 +20,7 @@ public class Book {
     private boolean availability;
     private String id_author;
 
-    public Book(String id, String name, int pageNumber, int topicId, String releaseDate, boolean availability) {
+    public Book(UUID id, String name, int pageNumber, int topicId, String releaseDate, boolean availability) {
         this.id = id;
         this.name = name;
         this.pageNumber = pageNumber;
