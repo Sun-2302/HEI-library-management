@@ -27,4 +27,5 @@ public class Book {
         this.releaseDate = releaseDate;
         this.availability = availability;
     }
+
 }
