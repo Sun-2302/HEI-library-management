@@ -1,5 +1,6 @@
 package org.example.repository;
 
+import lombok.AllArgsConstructor;
 import org.example.entity.Author;
 import org.example.entity.Subscriber;
 
@@ -10,6 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@AllArgsConstructor
 public class SubscriberCrudOperations implements CrudOperations<Subscriber>{
     private Connection connection;
     @Override
