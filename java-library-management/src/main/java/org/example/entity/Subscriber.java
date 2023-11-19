@@ -2,11 +2,12 @@ package org.example.entity;
 
 import lombok.*;
 
-@AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-@EqualsAndHashCode
 @ToString
 public class Subscriber extends User{
+    public Subscriber(String id, String name, String reference, String sex) {
+        super(id, name, reference, sex);
+    }
 }

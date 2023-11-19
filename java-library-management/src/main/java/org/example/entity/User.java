@@ -12,5 +12,5 @@ public abstract class User {
     private String id;
     private String name;
     private String reference;
-    private Character sex;
+    private String sex;
 }
