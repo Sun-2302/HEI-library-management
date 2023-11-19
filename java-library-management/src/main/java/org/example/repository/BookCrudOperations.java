@@ -26,7 +26,7 @@ public class BookCrudOperations implements CrudOperations<Book>{
                         resultSet.getInt("id_topic"),
                         resultSet.getString("release_date"),
                         resultSet.getBoolean("availability"),
-                        resultSet.getString("id_author")
+                        (UUID) resultSet.getObject("id_author")
                 ));
             }
         }catch (SQLException e){
@@ -48,7 +48,7 @@ public class BookCrudOperations implements CrudOperations<Book>{
                 statement.setInt(4, book.getTopicId());
                 statement.setDate(5, Date.valueOf(book.getReleaseDate()));
                 statement.setBoolean(6, book.isAvailability());
-                statement.setString(7, book.getId_author());
+                statement.setObject(7, book.getId_author());
 
                 statement.addBatch();
             }
@@ -71,7 +71,7 @@ public class BookCrudOperations implements CrudOperations<Book>{
             statement.setInt(4, toSave.getTopicId());
             statement.setDate(5, Date.valueOf(toSave.getReleaseDate()));
             statement.setBoolean(6, toSave.isAvailability());
-            statement.setString(7, toSave.getId_author());
+            statement.setObject(7, toSave.getId_author());
 
             statement.executeUpdate();
         }catch (SQLException e){

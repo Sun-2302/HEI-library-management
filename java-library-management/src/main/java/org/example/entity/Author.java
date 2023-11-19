@@ -2,6 +2,8 @@ package org.example.entity;
 
 import lombok.*;
 
+import java.util.UUID;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -9,7 +11,7 @@ import lombok.*;
 @EqualsAndHashCode
 @ToString
 public class Author {
-    private String id;
+    private UUID id;
     private String name;
     private String  sex;
 }

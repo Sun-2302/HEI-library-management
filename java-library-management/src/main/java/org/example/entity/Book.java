@@ -18,7 +18,7 @@ public class Book {
     private int topicId;
     private String releaseDate;
     private boolean availability;
-    private String id_author;
+    private UUID id_author;
 
     public Book(UUID id, String name, int pageNumber, int topicId, String releaseDate, boolean availability) {
         this.id = id;
