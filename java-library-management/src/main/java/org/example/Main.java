@@ -54,7 +54,21 @@ public class Main {
 
 
 
+        //SubscriberCrudOperations
+        SubscriberCrudOperations subscriberCrudOperations = new SubscriberCrudOperations(connection);
+        Subscriber subscriber = new Subscriber(UUID.fromString("2cd37629-59cf-4ce7-9ee6-9e37c05b7f06"),"Lura","S-003","M");
+        List<Subscriber> subscriberList = new ArrayList<>();
+        subscriberList.add(new Subscriber(UUID.fromString("b28de7b9-d4d3-489f-8dd4-1c680fc7de84"),"Sun","S-004","M"));
+        subscriberList.add(new Subscriber(UUID.fromString("014280be-12ef-4df1-8f71-e3ee9f97f75c"),"Amanda","S-005","F"));
 
+        //FindAll Subscribers
+        System.out.println(subscriberCrudOperations.findAll());
+        //Delete Subscribers
+        System.out.println(subscriberCrudOperations.delete(subscriber));
+        //Save Subscribers
+        System.out.println(subscriberCrudOperations.save(subscriber));
+        //SaveAll Subscribers
+        System.out.println(subscriberCrudOperations.saveAll(subscriberList));
 
     }
 }
