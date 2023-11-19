@@ -9,10 +9,10 @@ import java.util.UUID;
 @Getter
 @Setter
 @EqualsAndHashCode
-@ToString
 public abstract class User {
     private UUID id;
     private String name;
     private String reference;
     private String sex;
+
 }
