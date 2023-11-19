@@ -11,5 +11,5 @@ import lombok.*;
 public class Author {
     private String id;
     private String name;
-    private Character sex;
+    private String  sex;
 }
