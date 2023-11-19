@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2caa7239-33b7-441e-93cd-b75e4994fdb7" name="Changes" comment="add DatabaseConnection">
+    <list default="true" id="2caa7239-33b7-441e-93cd-b75e4994fdb7" name="Changes" comment="fix: configure UUID type">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/374706de-bd01-4e05-a59d-b3b4e0a9d39a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/374706de-bd01-4e05-a59d-b3b4e0a9d39a.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-library-management/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-library-management/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-library-management/src/main/java/org/example/entity/Subscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-library-management/src/main/java/org/example/entity/Subscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-library-management/src/main/java/org/example/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-library-management/src/main/java/org/example/entity/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -59,9 +65,9 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <envs>
-        <env name="user" value="prog_admin" />
         <env name="password" value="123456" />
         <env name="url" value="jdbc:postgresql://localhost:5432/library_management" />
+        <env name="user" value="prog_admin" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="java-library-management" />
@@ -85,7 +91,8 @@
       <option name="presentableId" value="Default" />
       <updated>1700313650945</updated>
       <workItem from="1700313653903" duration="10066000" />
-      <workItem from="1700378979703" duration="303000" />
+      <workItem from="1700378979703" duration="4443000" />
+      <workItem from="1700383695878" duration="11622000" />
     </task>
     <task id="LOCAL-00001" summary="add author.java entity">
       <created>1700316116734</created>
@@ -157,7 +164,77 @@
       <option name="project" value="LOCAL" />
       <updated>1700325259064</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add CrudOperations">
+      <created>1700379939351</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700379939352</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add BookCrudOperations">
+      <created>1700384136537</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700384136537</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add AuthorCrudOperations">
+      <created>1700384894855</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700384894855</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add SubscriberCrudOperations">
+      <created>1700385442871</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700385442871</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix: add constructor to AuthorCrudOperations">
+      <created>1700398121618</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1700398121618</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix: add constructor to SubscriberCrudOperations">
+      <created>1700398219761</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1700398219761</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix: add if not exist to create table">
+      <created>1700400632871</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1700400632871</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fix: configure date type">
+      <created>1700400664899</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1700400664899</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix: configure UUID type">
+      <created>1700402375247</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1700402375247</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix: configure UUID type">
+      <created>1700402851361</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1700402851361</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +251,15 @@
     <MESSAGE value="add book sql script" />
     <MESSAGE value="add subscriber sql script" />
     <MESSAGE value="add DatabaseConnection" />
-    <option name="LAST_COMMIT_MESSAGE" value="add DatabaseConnection" />
+    <MESSAGE value="add CrudOperations" />
+    <MESSAGE value="add BookCrudOperations" />
+    <MESSAGE value="add AuthorCrudOperations" />
+    <MESSAGE value="add SubscriberCrudOperations" />
+    <MESSAGE value="fix: add constructor to AuthorCrudOperations" />
+    <MESSAGE value="fix: add constructor to SubscriberCrudOperations" />
+    <MESSAGE value="fix: add if not exist to create table" />
+    <MESSAGE value="fix: configure date type" />
+    <MESSAGE value="fix: configure UUID type" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: configure UUID type" />
   </component>
 </project>
