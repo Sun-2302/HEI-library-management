@@ -1,11 +1,13 @@
 package org.example.repository;
 
+import lombok.AllArgsConstructor;
 import org.example.entity.Author;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@AllArgsConstructor
 public class AuthorCrudOperations implements CrudOperations<Author>{
     private Connection connection;
     @Override
