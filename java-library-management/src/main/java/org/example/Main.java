@@ -36,6 +36,25 @@ public class Main {
 
 
 
+        //AuthorCrudOperations
+        AuthorCrudOperations authorCrudOperations = new AuthorCrudOperations(connection);
+        Author author = new Author(UUID.fromString("8af32d1a-5c6d-40f1-9b84-83cdc471e1f5"),"Shakespeare","M");
+        List<Author> authorList = new ArrayList<>();
+        authorList.add(new Author(UUID.fromString("d54f79fd-428f-4558-abdd-a035890b89fd"),"J.K.Rowling","F"));
+        authorList.add(new Author(UUID.fromString("db2717ec-405e-40c9-9b21-174d76c07a55"),"Jon Lee Anderson","M"));
+
+        //FindAll Authors
+        System.out.println(authorCrudOperations.findAll());
+        //Delete Authors
+        System.out.println(authorCrudOperations.delete(author));
+        //Save Authors
+        System.out.println(authorCrudOperations.save(author));
+        //SaveAll Authors
+        System.out.println(authorCrudOperations.saveAll(authorList));
+
+
+
+
 
     }
 }
