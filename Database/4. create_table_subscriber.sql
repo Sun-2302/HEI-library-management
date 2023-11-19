@@ -1,4 +1,4 @@
-CREATE TABLE subscriber(
+CREATE TABLE if not exists subscriber(
     id uuid primary key,
     name varchar(250) not null,
     reference varchar(50) not null,

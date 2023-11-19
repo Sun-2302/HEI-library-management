@@ -1,4 +1,4 @@
-CREATE TABLE author(
+CREATE TABLE if not exists author(
     id uuid primary key,
     name varchar(50) not null,
     sex char

@@ -1,4 +1,4 @@
-CREATE TABLE book(
+CREATE TABLE if not exists book(
     id uuid primary key,
     name varchar(250) not null,
     page_number int not null,
